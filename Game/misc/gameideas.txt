@@ -1,0 +1,35 @@
+Game ideas
+
+Samurai platformer
+
+Mechanics:
+
+Primary
+- 3-5 different stances/strikes, rock-paper-scissors versus opponents stance
+- some stances/strikes end up in clashed swords, some instant kill, some wound, etc.
+- one hit kills/deaths
+- falling hurts legs, can't restart level, should have to commit seppuku to start over
+- very tactile, harsh collisions with swordplay - should feel intense not bouncy
+
+Secondary
+- cinematic kills
+- command to wipe off blade and sheathe
+- disarming, draw short blade
+- different blades increase range, speed, stagger
+- turn blade to glint sunlight into enemies' eyes (in levels where the sun is out)
+- mostly 1-on-1 fights a la Karateka, but some multiple enemy fights
+- take weapons off of fallen enemies - standing near corpse shows icon, pressing button pauses game and shows weapon description
+- weapons level-up based on number of kills
+
+
+Story:
+
+Start with young samurai who is assigned the task to bring a rogue daimyo to justice. First scene 
+involves infiltrating the camp and fighting his way to the throne room. The daimyo surrenders, samurai
+brings him back to his master, and is asked to perform the execution. [This part is controlled by the 
+player and can be a different game mechanic for style purposes] 
+
+Sound:
+- traditional japanese music
+- should be very minimalist
+- sound effects need to be harsh like the collisions

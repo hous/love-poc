@@ -1,0 +1,1 @@
+﻿var newDocumentRef = documents.add(200, 200, 72.0, "My New Doc N#"+a,DocumentMode.RGB, DocumentFill.TRANSPARENT);
