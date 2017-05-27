@@ -1,4 +1,4 @@
-require "common.lua"
+require "common"
 
 -- Advanced Tiled Loader (map/level loading library)
 TILED_LOADER_PATH = "lib/AdvTiledLoader/"

@@ -79,7 +79,7 @@ function anim_mt:update(dt)
 end
 
 function anim_mt:draw(x, y, angle, sx, sy)
-	love.graphics.drawq(self.img, self.frames[self.position], x, y, angle, sx, sy)
+	love.graphics.draw(self.img, self.frames[self.position], x, y, angle, sx, sy)
 end
 
 function anim_mt:addFrame(x, y, w, h, delay)

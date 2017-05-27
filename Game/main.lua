@@ -5,7 +5,7 @@ require "Player"
 require "Weapon"
 require "Room"
 HardonCollider = require "lib/HardonCollider"
-Timer = require "lib/hump/timer"
+Timer = require "lib.hump.timer"
 
 local allSolidTiles, dt, manager
  
@@ -18,7 +18,7 @@ function love.load()
 	-- HardonCollider (Collision detection library)
 	HC = HardonCollider(100, on_collide)
 	love.graphics.setBackgroundColor(200,200,200,255)
-	next_time = love.timer.getMicroTime()
+	next_time = love.timer.getTime() * 1000
 	player1 = Player("Player1", "bin/images/spritesheets/samus/", 100, 50, 35, 43)
 	player1.weapon = Weapon("Player1 Weapon", "bin/images/spritesheets/sword/", 33, 33, player1)
 	player2 = Player("Player2", "bin/images/spritesheets/samus/", 150, 50, 35, 43)
@@ -61,7 +61,7 @@ function love.draw()
 	for i,v in pairs(game.entities) do
 		v:draw()
 	end
-	local cur_time = love.timer.getMicroTime()
+	local cur_time = love.timer.getTime() * 1000
 	if next_time <= cur_time then
 		next_time = cur_time
 		return
@@ -72,7 +72,7 @@ end
 
 function love.keypressed(k)
 	if k == 'escape' then
-		love.event.push('q') -- quit the game
+		love.event.quit() -- quit the game
 	end
 end
 

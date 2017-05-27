@@ -26,7 +26,7 @@ end}
 -- 	There is a photoshop script to automate this
 function Sprite:setUpAnimationsFromFilenames()
     if love.filesystem.exists(self.sourceFolder) then
-        local filesTable = love.filesystem.enumerate(self.sourceFolder)
+        local filesTable = love.filesystem.getDirectoryItems(self.sourceFolder)
         for i,fileName in pairs(filesTable) do
             local imageFile = self.sourceFolder  .. fileName
             local animationName, frameWidth, frameHeight, totalFrames
@@ -35,7 +35,7 @@ function Sprite:setUpAnimationsFromFilenames()
                 animationName = imageParams[1]
                 frameWidth = imageParams[2]
                 frameHeight = imageParams[3]
-                totalFrames = string.gsub(imageParams[4],".gif","")
+                totalFrames = string.gsub(imageParams[4],".png","")
                 local source = love.image.newImageData(imageFile)
                 local w, h = source:getWidth(), source:getHeight()
                 source = love.graphics.newImage(source)
