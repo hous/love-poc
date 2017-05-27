@@ -1,6 +1,9 @@
-h1.Setup
 
-For OSX, using brew
+* Setup *
 
-$ brew cask install love
+Setup for OSX, using brew
+
+```
+brew cask install love
 love .
+```
