@@ -1,5 +1,5 @@
 
-* Setup *
+*Setup*
 
 Setup for OSX, using brew
 
