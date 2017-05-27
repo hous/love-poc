@@ -1,0 +1,6 @@
+h1.Setup
+
+For OSX, using brew
+
+$ brew cask install love
+love .
